@@ -1,0 +1,529 @@
+:root{
+    --blue: #009EFF;
+    --dark-blue: #2192FF;
+    --white: #fff;
+    --gay: #555;
+    --p:#999;
+    --light-gay: rgb(239, 239, 239);
+}
+::-webkit-scrollbar{
+    width: .5rem;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--blue);
+}
+::-webkit-scrollbar-track{
+    background: var(--light-gay);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    transition: .5s;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0 auto;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+.container{
+    /* border: 1px solid red; */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.clear-both{
+    clear: both;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@ top-nav @@@@@@@@@@@@@@@@@@@@*/
+
+.top-nav{
+    background-color: var(--blue);
+    color: #fff;
+    font-size: 12px;
+}
+.top-nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 32px;
+}
+.top-nav .top-nav-left i::before{
+    margin-right: 5px;
+}
+.top-nav .top-nav-left .bi-envelope-fill{
+    font-style: normal;
+}
+.top-nav .top-nav-left .bi-telephone-fill{
+    font-style: normal;
+    margin-left: 15px;
+}
+.top-nav .top-nav-right .s{
+    padding: 10px 15px 10px 15px;
+    /* border: 1px solid grey; */
+}
+.top-nav .top-nav-right .bi-google{
+    padding: 10px 0px 10px 15px;
+}
+
+.top-nav .top-nav-right i{
+    color: var(--white);
+}
+
+/*@@@@@@@@@@@@@@@@@@@@ navbar @@@@@@@@@@@@@@@@@@@@*/
+
+.navigationBar{
+    background-color: var(--white);
+    position: relative;
+    z-index: 999;
+    transition: top .5s !important;
+}
+.navigationBar.active{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 5px 10px #555555;
+}
+nav .nav-con{
+    width: 100%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .nav-con .logo h3{
+    font-size: 24px;
+    margin: 0 auto;
+}
+nav .nav-con .logo span{
+    color: var(--blue);
+}
+nav .container .menu{
+    display: flex;
+}
+nav .container .menu li a{
+    padding: 23px 10px;
+    color: black;
+    font-weight: 600;
+}
+nav .container .menu li a:hover{
+    background-color: var(--dark-blue);
+    color: #fff;
+}
+nav .container .menu li .home{
+    color: var(--blue);
+}
+nav .container .nav-cart-login button{
+    width: 48px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--light-gay);
+    padding: 5px 15px;
+}
+nav .container .nav-cart-login i{
+    font-size: 18px;
+    transition: none;
+}
+.container .nav-cart-login button:hover{
+    background-color: var(--dark-blue);
+    color: #fff;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@ banner @@@@@@@@@@@@@@@@@@@@*/
+
+.banner{
+    width: 100%;
+    height: 689px;
+    background-image: url(imh-save/banner1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner .container .banner-content{
+    max-width: 500px;
+    height: 689px;
+    margin: 0 6rem;
+    padding-top: 15%;
+}
+.banner .container .banner-content span{
+    font-size: 14px;
+    color: var(--gay);
+}
+.banner .container .banner-content h2{
+    font-size: 40px;
+}
+.banner .container .banner-content h3{
+    font-size: 50px;
+}
+.banner .container .banner-content .MNP{
+    color: var(--blue);
+    font-size: 50px;
+}
+.banner .container .banner-content p{
+    font-size: 16px;
+    margin: 0 0 20px;
+    color: var(--gay);
+}
+.banner .container .banner-btn{
+    display: inline-block;
+    font-size: 16px;
+    padding: 12px 40px;
+    border-radius: 5px;
+    background-color: var(--blue);
+    color: var(--white);
+}
+.banner .container .banner-btn:hover{
+    background-color: var(--dark-blue);
+}
+
+/*@@@@@@@@@@@@@@@@@@@@ promotion @@@@@@@@@@@@@@@@@@@@*/
+
+.promotion-header{
+    border-left: 8px solid var(--blue);
+    border-right: 8px solid var(--blue);
+    margin: 40px 0 20px;
+    padding: 12px 0 10px;
+    height: 44px;
+    background-color: var(--light-gay);
+}
+.promotion-header marquee span{
+    margin-left: 200px;
+}
+.promotion .promotion-row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 38px;
+}
+.promotion .po-1{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.promotion .promotion-col:hover img{transform: scale(1.1);}
+.promotion .po-1 .promotion-image{
+    overflow: hidden;
+    width: 591.5px;
+    height: 413px;
+    position: relative;
+}
+.promotion .po-1 .promotion-contant h3{
+    font-size: 22px;
+}
+.promotion .po-1 .promotion-contant p{
+    font-size: 15px;
+    color: var(--p);
+}
+.promotion .po-2 .promotion-image,
+.promotion .po-3 .promotion-image,
+.promotion .po-4 .promotion-image,
+.promotion .po-5 .promotion-image{
+    overflow: hidden;
+    font-size: 15px !important;
+    height: 187.89px;
+    position: relative;
+    /* background-color: #3f3f3f;a */
+}
+.promotion .promotion-col .promotion-contant{
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: var(--white);
+}
+
+.promotion .promotion-contant button{
+    padding: 8px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: var(--blue);
+    color: var(--white);
+}
+.promotion .promotion-contant button:hover{
+    background-color: var(--dark-blue);
+}
+
+/*@@@@@@@@@@@@@@@@@@@@ category @@@@@@@@@@@@@@@@@@@@*/
+.category-row{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+}
+.category-col{
+    position: relative;
+    transition: all .4s ease;
+}
+.category-col .category-img{
+    height: 250px;
+}
+.category-col .category-img img{
+    background-position: right;
+    position: relative;
+}
+.category-col .category-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--blue);
+    opacity: 0;
+}
+.category-col .category-content a{
+    color: var(--white);
+}
+.category-col .category-content:hover{
+    opacity: 1;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@ popular @@@@@@@@@@@@@@@@@@@@*/
+
+.popular{
+    background-color: var(--light-gay);
+    margin-top: 100px;
+    padding: 100px 0 80px;
+}
+.container .popular-header{
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.popular .popular-header h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.popular .popular-header p{
+    color: var(--gay);
+}
+.popular .popular-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(225px,1fr));
+    gap: 50px 20px;
+    padding: 10px;
+}
+.popular .popular-col{
+    margin: auto;
+}
+.popular .popular-col .popular-img{
+    position: relative;
+    overflow: hidden;
+    height: 346.11px;
+    background-position: center;
+    background-size: cover;
+}
+.popular .popular-col .popular-img:hover img{transform: scale(1.1);}
+
+.popular .popular-col .viwe{
+    width: 130px;
+    position: absolute;
+    background-color: var(--blue);
+    bottom: 10px;
+    left: 50% ;
+    text-align: center;
+    font-size: 16px;
+    transform: translate(-50%);
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+    opacity: 0;
+}
+.popular .popular-col .viwe:hover{
+    background-color: var(--dark-blue);
+}
+.popular .popular-col:hover .viwe{
+    opacity: 1;
+    bottom: 60px;
+}
+.popular-content h4{
+    margin: .5rem 0;
+}
+.popular .popular-btn-vm{
+    width: 150px;
+    background-color: var(--blue);
+    padding: 12px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+    border-radius: 5px;
+}
+.popular .popular-btn-vm a{
+    color: var(--white);
+}
+.popular .popular-btn-vm:hover{
+    background-color: var(--dark-blue);
+}
+
+/*@@@@@@@@@@@@@@@@@@@@ Vip @@@@@@@@@@@@@@@@@@@@*/
+
+.vip{
+    height: 345px;
+    background: url(imh-save/subscribe/Online\ Shopping\ -\ Copy.png);
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+    padding: 100px 15px;
+}
+.vip .container .vip-cocntent{
+    text-align: center;
+    margin: auto;
+}
+.vip .container .vip-cocntent h2{
+    font-size: 40px;
+    color: var(--white);
+}
+.vip .container .vip-cocntent .vip-btn{
+    width: 150px;
+    padding: 12px;
+    margin-top: 20px;
+    font-size: 15px;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 5px;
+}
+.vip .container .vip-cocntent .vip-btn:hover{
+    background-color: var(--dark-blue);
+}
+
+/*@@@@@@@@@@@@@@@@@@@@ Blog @@@@@@@@@@@@@@@@@@@@*/
+
+.blog{
+    height: auto;
+    /* background: red; */
+    padding: 100px 0;
+}
+
+.blog-header{
+    text-align: center;
+}
+.blog-header h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.blog-header p{
+    font-size: 16px;
+}
+.blog .blog-row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin: 50px 0;
+}
+.blog .blog-col .blog-img{
+    position: relative;
+    overflow: hidden;
+}
+.blog .blog-col .blog-img .show-vb{
+    background: var(--blue);
+    width: 75px;
+    padding: 5px;
+    font-size: 14px;
+    border-bottom-left-radius: 8px;
+    color: var(--white);
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    transition: .5s;
+}
+.blog .blog-col:hover .show-vb{
+    top: 0px;
+}
+.blog .blog-col:hover .blog-content a{
+    color: var(--blue);
+}
+.blog-content h6{
+    margin: 10px 0;
+    font-weight: bold;
+}
+.blog-content a{
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+.blog-content a:hover{
+    color: var(--dark-blue);
+}
+.blog-content p{
+    margin: 10px 0;
+    color: var(--gay);
+}
+
+/*@@@@@@@@@@@@@@@@@@@@ footer @@@@@@@@@@@@@@@@@@@@*/
+
+.footer{
+    background-color: #222;
+    height: 400px;
+}
+.footer .footer-row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    padding-top: 50px;
+}
+.footer .footer-col{
+    color: var(--white);
+    padding: 50px 0;
+}
+.footer .footer-col h5{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.footer .footer-col ul a{
+    color: var(--gay);
+    line-height: 2;
+}
+.footer .footer-col ul a:hover{
+    color: var(--dark-blue);
+}
+.footer .footer-col p{
+    color: var(--gay);
+}
+.footer .footer-col input{
+    background: #222;
+    padding: 10px;
+    border-bottom: 2px solid var(--gay);
+    width: 100%;
+    font-size: 15px;
+    color: var(--white);
+}
+.footer .footer-col .footer-email-btn{
+    font-size: 15px;
+    width: 150px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: var(--blue);
+    color: var(--white);
+}
+.footer .footer-col .footer-email-btn:hover{
+    background-color: var(--dark-blue);
+}
+.footer .credit{
+    border-top: 1px solid var(--gay);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer .credit p{
+    color: var(--light-gay);
+    margin-top: 30px;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@ END @@@@@@@@@@@@@@@@@@@@*/
