@@ -1,2 +1,2 @@
-# Practice_01
+# New Project Practice_01
 html,css,js
