@@ -1,6 +1,6 @@
 :root{
-    --blue: #009EFF;
-    --dark-blue: #2192FF;
+    --blue: #890F0D;
+    --dark-blue: #630606;
     --white: #fff;
     --gay: #555;
     --p:#999;
@@ -120,7 +120,7 @@ nav .container .menu li a{
     font-weight: 600;
 }
 nav .container .menu li a:hover{
-    background-color: var(--dark-blue);
+    background-color: var(--blue);
     color: #fff;
 }
 nav .container .menu li .home{
@@ -138,7 +138,7 @@ nav .container .nav-cart-login i{
     transition: none;
 }
 .container .nav-cart-login button:hover{
-    background-color: var(--dark-blue);
+    background-color: var(--blue);
     color: #fff;
 }
 
@@ -457,7 +457,7 @@ nav .container .nav-cart-login i{
     font-size: 18px;
 }
 .blog-content a:hover{
-    color: var(--dark-blue);
+    color: var(--blue);
 }
 .blog-content p{
     margin: 10px 0;
@@ -489,7 +489,7 @@ nav .container .nav-cart-login i{
     line-height: 2;
 }
 .footer .footer-col ul a:hover{
-    color: var(--dark-blue);
+    color: var(--blue);
 }
 .footer .footer-col p{
     color: var(--gay);
